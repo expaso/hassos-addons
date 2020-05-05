@@ -1,6 +1,6 @@
 
 {
-  "name": "Hass.IO example add-on repository",
-  "url": "https://home-assistant.io/",
-  "maintainer": "HomeAssistant <info@home-assistant.io>"
+  "name": "Expaso HassOS Add-on Repository",
+  "url": "https://github.com/Expaso/hassos-addons",
+  "maintainer": "Hans van Essen <hans@expaso.nl>"
 }
