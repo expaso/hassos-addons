@@ -1,6 +1,6 @@
 
 {
-  "name": "Expaso HassOS Add-on Repository",
+  "name": "Expaso Home Assistant Add-Ons",
   "url": "https://github.com/Expaso/hassos-addons",
   "maintainer": "Hans van Essen <hans@expaso.nl>"
 }
