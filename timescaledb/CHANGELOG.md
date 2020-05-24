@@ -1,4 +1,7 @@
-### Changelog
+# 1.1.0
+
+- Upgraded TimeScaleDb to 1.7.1 due to critical issues in 1.7.0 (see: https://github.com/timescale/timescaledb/releases/tag/1.7.1)
+- Added pgAdmin extension
 
 # 1.0.3
 
