@@ -1,3 +1,11 @@
+# 1.1.2
+
+- Prevent add-on exit when pgAgent-extension cannot be installed correctly.
+
+# 1.1.1
+
+- Support for more versions of TimecaleDb. This is needed when upgrading existing installations.
+
 # 1.1.0
 
 - Upgraded TimeScaleDb to 1.7.1 due to critical issues in 1.7.0 (see: https://github.com/timescale/timescaledb/releases/tag/1.7.1)
