@@ -1,3 +1,7 @@
+## 1.0.3
+
+- Updated pgAdmin to 4.22
+
 ## 1.0.2
 
 - Fixed ingress (Sidebar UI) when serving HA from a non-standard http-port
