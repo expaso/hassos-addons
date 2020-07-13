@@ -1,3 +1,7 @@
+## 1.0.4
+
+- Updated pgAdmin to 4.23
+
 ## 1.0.3
 
 - Updated pgAdmin to 4.22
