@@ -1,6 +1,7 @@
 # 1.1.3
 
-- Upgraded TimeScaleDb to 1.7.2 (see: https://github.com/timescale/timescaledb/releases/tag/1.7.2)
+- Upgraded TimeScaleDb to 1.7.2 (see: https://github.com/timescale/timescaledb/releases/tag/1.7.2).
+- Fix problem whereby permissions on data-directory are wrong after snapshot restore.
 
 # 1.1.2
 
