@@ -1,3 +1,8 @@
+## 1.0.6
+
+- Updated pgAdmin to 4.27
+See also: https://www.pgadmin.org/docs/pgadmin4/development/release_notes_4_27.html
+
 ## 1.0.5
 
 - Updated pgAdmin to 4.25
