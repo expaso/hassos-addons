@@ -1,3 +1,9 @@
+# 1.1.4
+
+- Upgraded Postgres to 12.4 (see: https://www.postgresql.org/docs/12/release-12-4.html)
+- Upgraded TimescaleDb to 1.7.4 (see: https://github.com/timescale/timescaledb/releases/tag/1.7.4)
+- Added possibility to use system_packages:[str] and init_commands:[str] in your config, to further customize the container during startup.
+
 # 1.1.3
 
 - Upgraded TimeScaleDb to 1.7.2 (see: https://github.com/timescale/timescaledb/releases/tag/1.7.2).
