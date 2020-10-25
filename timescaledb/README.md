@@ -104,6 +104,14 @@ See also:
 https://docs.timescale.com/latest/getting-started/configuring
 for further tuning. Your Postgres.config file is located in the addon's data directory.
 
+### Option: `system_packages`
+
+For advanced users, here you can list any additional alpine packages that will be installed during add-on initialization.
+
+### Option: `init_commands`
+
+For advanced users, here you can list additional commands to run during add-on startup.
+
 ## Usage
 
 You are now ready to start using Postgres with TimescaleDb extenstions enabled!
