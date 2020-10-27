@@ -104,23 +104,14 @@ See also:
 https://docs.timescale.com/latest/getting-started/configuring
 for further tuning. Your Postgres.config file is located in the addon's data directory.
 
-### Option: `system_packages`
-
-For advanced users, here you can list any additional alpine packages that will be installed during add-on initialization.
-
-### Option: `init_commands`
-
-For advanced users, here you can list additional commands to run during add-on startup.
-
 ## Usage
 
 You are now ready to start using Postgres with TimescaleDb extenstions enabled!
 
 Seeking a nice web-based client? **Try the pgAdmin4 addon.**
 
-Please do not forget to also map the TCP/IP port in the network-section of the addon to the desired port number on the host, if you whish to expose
-the Postgresql-instance to the rest of your network.
-The default is port `5432`.
+Please do not forget to also map the TCP/IP port in the network-section of the addon to the desired port number.
+The default is port `5432`
 
 __Securiy Notice!__
 
