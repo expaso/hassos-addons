@@ -1,3 +1,12 @@
+# 1.1.6
+
+- Added armhf architechture
+- Added max_connection configuration-option to set the maximum number of connection PostgreSql will accept.
+
+# 1.1.5
+
+- Added armv7 support: Closes #7 Add armv7 compatibility. Thanks to @berga (#8)
+
 # 1.1.4
 
 - Upgraded Postgres to 12.4 (see: https://www.postgresql.org/docs/12/release-12-4.html)
