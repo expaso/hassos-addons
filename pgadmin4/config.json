@@ -1,6 +1,6 @@
 {
   "name": "pgAdmin4",
-  "version": "1.1.0",
+  "version": "1.0.6",
   "stage": "stable",
   "slug": "pgadmin4",
   "description": "A PostgreSQL Management and Query tool",
@@ -11,7 +11,7 @@
   "ingress_port": 0,
   "panel_icon": "mdi:database",
   "panel_title": "pgAdmin 4",
-  "hassio_api": false,
+  "hassio_api": true,
   "hassio_role": "default",
   "boot": "auto",
   "init": false,
