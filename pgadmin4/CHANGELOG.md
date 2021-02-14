@@ -1,3 +1,9 @@
+## 1.1.0
+
+- Updated pgAdmin to 4.30
+See also: https://www.pgadmin.org/docs/pgadmin4/development/release_notes_4_30.html
+- Upgraded base image from 7.0.1 to 9.1.2
+
 ## 1.0.6
 
 - Updated pgAdmin to 4.27
