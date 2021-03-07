@@ -1,3 +1,9 @@
+## 1.2.0
+
+- Updated pgAdmin to 5.0
+See also: https://www.pgadmin.org/docs/pgadmin4/development/release_notes_5_0.html
+- Updated base images (Thanks @sinclairpaul for getting my CI working again with this version leap!)
+
 ## 1.1.0
 
 - Updated pgAdmin to 4.30
