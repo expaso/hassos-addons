@@ -1,3 +1,9 @@
+## 1.2.1
+
+- Updated pgAdmin to 5.3
+See also: https://www.pgadmin.org/docs/pgadmin4/development/release_notes_5_3.html
+- Updated base images
+
 ## 1.2.0
 
 - Updated pgAdmin to 5.0
