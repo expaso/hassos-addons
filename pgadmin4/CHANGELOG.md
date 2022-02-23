@@ -1,6 +1,7 @@
 ## 2.0.0
 
 - Upgraded pgAdmin to 6.5
+See also: https://www.pgadmin.org/docs/pgadmin4/development/release_notes_6_4.html
 - Upgraded base images to be in-line with the lastest home-assistant add-ons
 - Dropped support for Postgresql 9
 - Added support for Postgresql 13 and 14
