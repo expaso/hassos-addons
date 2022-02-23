@@ -1,11 +1,11 @@
 ## 2.0.0
 
-- Upgraded pgAdmin to 6.5
+- Updated pgAdmin to 6.5
 See also: https://www.pgadmin.org/docs/pgadmin4/development/release_notes_6_4.html
-- Upgraded base images to be in-line with the lastest home-assistant add-ons
+- Updated base images to be in-line with the lastest home-assistant add-ons
 - Dropped support for Postgresql 9
 - Added support for Postgresql 13 and 14
-- Patched a reg-ex in sourcecode that prevented hostnames staring with digits to be used. This fixes the problem whereby a hostname like 77b2833f-timescaledb validated as an invalid hostname.
+- Patched a reg-ex in sourcecode that prevented hostnames starting with digits to be used. This fixes the problem whereby a hostname like `77b2833f-timescaledb` validated as an invalid hostname.
 
 ## 1.2.1
 
