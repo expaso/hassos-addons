@@ -1,6 +1,6 @@
 {
   "name": "pgAdmin4",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "stage": "stable",
   "slug": "pgadmin4",
   "description": "A PostgreSQL Management and Query tool",
