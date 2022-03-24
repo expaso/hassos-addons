@@ -1,3 +1,8 @@
+## 2.1.0
+
+- Updated pgAdmin to 6.7
+See also: https://www.pgadmin.org/docs/pgadmin4/development/release_notes_6_7.html
+
 ## 2.0.0
 
 - Updated pgAdmin to 6.5
