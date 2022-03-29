@@ -1,3 +1,26 @@
+# 2.0.0
+ 
+!! READ CAREFULLY - Breaking changes !!
+
+- Upgraded PostgreSQL to 14.2
+- Upgraded TimescaleDb to 2.6.0
+- Upgraded Postgis to 3.2.1
+- Upgraded pgAgent to 4.2.2
+
+It took a while before this release came out. Covid came (and went!), but more importantly: Timescale 2.0 came out, just as PostgreSql 13 and 14.
+I know that a lot of you guys (ald girls) were waiting for support of 2.0, but I had to be very carefull not to break your existing setups.
+
+The goals was to bring a seamless upgrade experience for both TimeScale, Postgis, as well as PostgreSql itself.
+To perform these upgrades all together was not trivial, but, it's here!!
+
+Please read the link below carefully to thoroughly understand the new breaking changes in TimescaleDb.
+
+(see: https://docs.timescale.com/timescaledb/latest/overview/release-notes/changes-in-timescaledb-2/)
+
+May you find any issues during install and/or upgrade, please open an issue on Github: https://github.com/Expaso/hassos-addon-timescaledb/issues
+
+Thanks for all your support!
+
 # 1.1.6
 
 - Added armhf architechture
