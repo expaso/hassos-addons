@@ -1,5 +1,12 @@
-# Home Assistant Add-on: [TimescaleDB](https://www.timescale.com/)
-## [PostgreSql 12.4](https://www.postgresql.org/) & [Postgis 3.0.2](https://postgis.net/) & [TimescaleDB 1.7.4](https://www.timescale.com/)
+# Home Assistant Add-on: [PostgreSQL](https://www.postgresql.org/) [TimescaleDB](https://www.timescale.com/)
+## [PostgreSql 14.2](https://www.postgresql.org/) & [Postgis 3.2.1](https://postgis.net/) & [TimescaleDB 2.6.0](https://www.timescale.com/)
+## PostgreSQL Overview
+
+From: https://www.postgresql.org/about/
+
+PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. The origins of PostgreSQL date back to 1986 as part of the POSTGRES project at the University of California at Berkeley and has more than 30 years of active development on the core platform.
+
+PostgreSQL has earned a strong reputation for its proven architecture, reliability, data integrity, robust feature set, extensibility, and the dedication of the open source community behind the software to consistently deliver performant and innovative solutions.
 
 ## TimescaleDB Overview
 
