@@ -2,15 +2,15 @@
  
 !! READ CAREFULLY - Breaking changes !!
 
-- Upgraded PostgreSQL to 14.2
-- Upgraded TimescaleDb to 2.6.0
-- Upgraded Postgis to 3.2.1
-- Upgraded pgAgent to 4.2.2
-
+Upgraded PostgreSQL to 14.2 🎉
+Upgraded TimescaleDb to 2.6.0 🥳
+Upgraded Postgis to 3.2.1 👍🏻
+Upgraded pgAgent to 4.2.2
+Upgraded base images to 11.1.1
 It took a while before this release came out. Covid came (and went!), but more importantly: Timescale 2.0 came out, just as PostgreSql 13 and 14.
-I know that a lot of you guys (ald girls) were waiting for support of 2.0, but I had to be very carefull not to break your existing setups.
+I know that a lot of you guys (and girls) were waiting for support of Timescale 2+, but I had to be very careful not to break your existing setups.
 
-The goals was to bring a seamless upgrade experience for both TimeScale, Postgis, as well as PostgreSql itself.
+The goals was to bring a seamless upgrade experience for both Timescale, Postgis, as well as Postgresql itself.
 To perform these upgrades all together was not trivial, but, it's here!!
 
 Please read the link below carefully to thoroughly understand the new breaking changes in TimescaleDb.
