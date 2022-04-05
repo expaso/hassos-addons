@@ -1,6 +1,6 @@
 {
   "name": "TimescaleDB",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "stage": "stable",
   "slug": "timescaledb",
   "description": "An open-source database built on PostgreSQL for analyzing time-series data with the power and convenience of SQL",
@@ -10,7 +10,7 @@
   "boot": "auto",
   "init": false,
   "map": ["share:rw"],  
-  "timeout": 20,
+  "timeout": 60,
   "ports": {
     "5432/tcp": null
   },
