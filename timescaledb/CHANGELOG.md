@@ -1,3 +1,8 @@
+
+# 2.0.1
+
+- Fixed an issue with PostgreSql 12 to 14 conversion, whereby conversion could fail when the database was being accessed during the upgrade process.
+
 # 2.0.0
  
 !! READ CAREFULLY - Breaking changes !!

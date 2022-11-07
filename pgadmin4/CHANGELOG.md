@@ -1,3 +1,11 @@
+## 2.1.0
+
+- 🎉Upgraded pgAdmin to 6.14
+See also: https://www.pgadmin.org/docs/pgadmin4/development/release_notes_6_15.html
+  This brings support for Postgresql 15!
+- ⬆️Upgraded addon base-image to 12.2.5
+- ⬆️Upgraded python to 3.10
+
 ## 2.0.0
 
 - Updated pgAdmin to 6.5

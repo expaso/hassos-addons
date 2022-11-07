@@ -1,11 +1,11 @@
 {
   "name": "pgAdmin4",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "stage": "stable",
   "slug": "pgadmin4",
   "description": "A PostgreSQL Management and Query tool",
   "url": "https://github.com/Expaso/hassos-addon-pgadmin4",
-  "arch": ["aarch64", "amd64", "armhf", "i386"],
+  "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
   "startup": "services",
   "ingress": true,
   "ingress_port": 0,
