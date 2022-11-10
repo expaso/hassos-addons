@@ -2,6 +2,7 @@
 
 - 🎉Upgraded pgAdmin to 6.15
 See also: https://www.pgadmin.org/docs/pgadmin4/development/release_notes_6_15.html
+- ⚠️ Please clear your browser cache first if you experience any issues! ⚠️
   
 ## 2.1.0
 
