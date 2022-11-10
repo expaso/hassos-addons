@@ -1,6 +1,6 @@
 {
   "name": "TimescaleDB",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "stage": "stable",
   "slug": "timescaledb",
   "description": "An open-source database built on PostgreSQL for analyzing time-series data with the power and convenience of SQL",
@@ -11,6 +11,7 @@
   "init": false,
   "map": ["share:rw"],  
   "timeout": 60,
+  "tmpfs": true,
   "ports": {
     "5432/tcp": null
   },
@@ -23,11 +24,12 @@
     "timescaledb": { 
       "telemetry": "basic",
       "maxmemory": "512MB",
-      "maxcpus": "4"
+      "maxcpus": 4
     },
     "max_connections": 20,
     "system_packages": [],
-    "init_commands": []
+    "init_commands": [],
+    "retry_upgrade": false
   },
   "schema": {
     "databases": ["str"],
@@ -39,7 +41,8 @@
     },
     "max_connections": "int(20,)",
     "system_packages": ["str"],
-    "init_commands": ["str"]
+    "init_commands": ["str"],
+    "retry_upgrade": "bool?"
   },
   "image": "husselhans/hassos-addon-timescaledb-{arch}"
 }
