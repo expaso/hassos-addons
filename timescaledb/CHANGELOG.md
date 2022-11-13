@@ -1,4 +1,18 @@
 
+# 2.1.1
+
+- Added missing packages llvm12. Closes #27
+# 2.1.0
+
+- ⬆️Upgraded Base Image to 12.2.6
+- ⬆️Upgraded PostgreSql to 14.5
+- ⬆️Upgraded Timescale to 2.8.1
+- 🎉Feat: add the stats_temp_directory option and enable tmpfs @snowyu (#24)
+- 🎉Adds postgresql contrib for standard functions @jhogendorn (#25)
+- Implemented better checks around various installed extensions, so the upgrade is more intelligent about what extensions should be updated during startup.
+- Minor bugs and fixes for resilliency.
+
+
 # 2.0.1
 
 - Fixed an issue with PostgreSql 12 to 14 conversion, whereby conversion could fail when the database was being accessed during the upgrade process.
