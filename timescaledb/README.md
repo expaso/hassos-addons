@@ -1,5 +1,5 @@
 # Home Assistant Add-on: [PostgreSQL](https://www.postgresql.org/) [TimescaleDB](https://www.timescale.com/)
-## [PostgreSql 14.5](https://www.postgresql.org/) & [Postgis 3.2.1](https://postgis.net/) & [TimescaleDB 2.8.1](https://www.timescale.com/)
+## [PostgreSql 15.3](https://www.postgresql.org/) & [Postgis 3.3.3](https://postgis.net/) & [TimescaleDB 2.11.1](https://www.timescale.com/) & [TimescaleDB Toolit 1.13.1](https://github.com/timescale/timescaledb-toolkit) & [pgAgent 4.2.2](https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html)
 ## PostgreSQL Overview
 
 From: https://www.postgresql.org/about/
@@ -142,10 +142,10 @@ Example: ['sed -i -e "/max_connections =/ s/= .*/= 50/" /data/postgres/postgresq
 ### Option: `retry_upgrade`
 
 Advanced users only!
-When set, the upgrade from Postgres 12 to 14 could be retryed if it failed mid-flight. 
+When set, the upgrade from Postgres 14 to 15 could be retryed if it failed mid-flight. 
 Basically this will try to find the old database-files from Postgres 12, and restore them before trying to upgrade to Postgres 14 again.
 
-!! Please don't set this if you don't know what you are doing !!
+!! Please don't set this if you don't know what you are doing or before taking a backup. !!
 
 ## Usage
 
