@@ -1,3 +1,28 @@
+# 3.0.0v2.1.2
+
+It has been a while, but this release had many many important changes under the hood!
+
+Upgrades:
+- ⬆️ Upgraded Postgresql to 15.3 🥳
+- ⬆️ Upgraded TimescaleDb to 2.11.1
+- ⬆️ Upgraded Postgis to 3.3.3
+- ⬆️ Upgraded Base Images to 14.0.2
+- ⬆️ Upgraded all S6 container scripts to the new coding style
+- ⬆️ Moved all config files from json to yaml.
+
+Features:
+- 🚀 Paved the way for Timescaledb-Toolkit integration
+- 🚀 Postgresql 14 to Postgresql 15 auto upgrade
+- 🚀 Increased max-connections default to 50
+- 🚀 Added dependencies for Postgis-raster to fuction
+- 🚀 Implemented Codenotary CAS to enable addon-signing for a higher security rating
+
+Fixes:
+- 🐛 Fixed an issue whereby pgAgent jobs did not run due to noexec mount of /tmp. Moved the workingfolder of pgAgent to /data/tmp/pgagent
+
+
+
+
 
 # 2.1.1
 
