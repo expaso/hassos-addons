@@ -1,3 +1,7 @@
+# 3.0.0
+
+- 🐛 Fixed a bug
+- 🚀 Added New Feature
 
 # 2.1.1
 
