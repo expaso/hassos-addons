@@ -1,3 +1,9 @@
+# 3.0.2
+
+## 🚀 Features
+
+- Fixed issue whereby pgAgent jobs were hanging in status Running @Expaso (#39)
+
 # 3.0.1
 
 ## 🚀 Features
