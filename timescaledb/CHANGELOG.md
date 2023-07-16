@@ -1,3 +1,14 @@
+# 3.0.1
+
+## 🚀 Features
+
+- Fixed an issue whereby the upgrade would fail when the scripts from TimescaleDb-extras are installed. @Expaso (#37)
+⚠️ Please reinstall TimescaleDb-extras after the upgrade should you need them. ⚠️
+
+## 🐛 Bug Fixes
+
+- Fixed an issue with pgAgent not updating job status @Expaso (#38)
+
 # 3.0.0
 
 It has been a while, but this release had many many important changes under the hood!
