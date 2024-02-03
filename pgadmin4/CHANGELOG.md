@@ -1,3 +1,15 @@
+## 3.0.1
+
+- 🎉Upgraded pgAdmin to 8.2.
+  - Release Notes https://www.pgadmin.org/docs/pgadmin4/development/release_notes_8_2.html
+  - Closes https://github.com/Expaso/hassos-addon-pgadmin4/issues/9
+- 🎉Increased Timeout for pgAdmin to 300s 
+  - Closes https://github.com/Expaso/hassos-addon-pgadmin4/issues/7
+- 🎉Rebuild images for armv7 like the Raspberry PI4 32-bit OS.
+  - Closes https://github.com/Expaso/hassos-addon-pgadmin4/issues/5
+- ⚠️ Please clear your browser cache first if you experience any issues! ⚠️
+- ⬆️Upgraded addon base-image to 15.0.5 
+
 ## 2.1.1
 
 - 🎉Upgraded pgAdmin to 6.15
