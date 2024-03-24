@@ -1,3 +1,66 @@
+# 4.0.0
+
+Finally its here! What you all have been waiting for: The TimescaleDB Toolkit Release! 🥳
+
+⚠️ This release is packed with new stuff and improvements, but also some caveats! Please read these release notes carefully before installing!
+
+It has been a long time coming, but I am finally able to release the TimescaleDB Toolkit for all supported architectures. This release includes the latest version of TimescaleDB, PostgreSQL and Postgis.
+
+## 🚀 Features
+
+- Finally! 🎉 TimescaleDB_Toolkit 1.18.0 (only for amd64/aarch64/arm64 systems, but that would cover most of you). See: https://github.com/timescale/timescaledb-toolkit?tab=readme-ov-file
+- Support for all architechtures (amd64, aarch64, armv7, armhf, i386).
+- Support for running this addon as a standalone docker container outside of Home Assistant! Please consult the readme for more information. This makes is possible to run this addon on any system that supports docker, and way easier to migrate from a raspberry pi to a more powerful system.
+- Mapped the `/media` folder into the addon, so that __could__ be used to store database or backups, just like the __share__ foilder.
+
+## ⬆️ Maintenance
+- PostgreSQL: 16.2 --> https://www.postgresql.org/docs/release/16.2/
+- TimescaleDB: 2.14.2 --> https://docs.timescale.com/about/latest/release-notes/#timescaledb-2142-on-2024-02-20
+- Postgis: 3.4.2 --> https://postgis.net/docs/release_notes.html
+- Base Image: 15.0.7
+
+## Notes before upgrading
+
+As you are already accustomed to, this release will auto-upgrade your current PostgreSQL 15 installation to PostgreSQL 16.2. This is a major upgrade and you should be aware of the following:
+
+- **PostgreSQL 16.2** is a major version upgrade. This means that you will not be able to downgrade to PostgreSQL 15 without a backup.
+
+- From Timescale 2.7 onwards, TimescaleDb has a new form of continuous aggregates. If you have continuous aggregates in your database, you should read the following documentation: https://docs.timescale.com/use-timescale/latest/continuous-aggregates/migrate/
+
+### TLDR;
+
+Use the following query to see if you have continuous aggregates in your database:
+
+```sql 
+select * from timescaledb_information.continuous_aggregates
+```
+
+Look at the last column 'Finalized'. If it says **False**, you could migrate the continuous aggregates after upgrading the addon using:
+
+```sql 
+CALL cagg_migrate('<name of aggregate>', true, true); 
+```
+
+The query output will hint you that you need to refresh the aggregate using the query specified in the message.
+
+## Overthinking
+
+This release was a real pain in the %#@ to get out.
+To compile all this stuff in for different architechtures proved to be full of pitfalls and weirdness.
+
+I have had many compiler crashes, demolished WSL2, triggered bugs in qemu, docker, Alpine, even in docker-hub which I had to wait for.
+I even had to rewrite all buildscripts to precompile a lot of stuff upfront, otherwise the github build-agents would just give up on me!
+
+But I am happy it finally worked out. I hope you all enjoy this release as much as I did making it (most of the time ;)
+Thank you for all your support and your patience. I hope you all have a great time with this release!
+
+I would love to hear your feedback, so please let me know what you think on Github (https://github.com/Expaso/hassos-addon-timescaledb), Discord (https://discord.gg/ceAynsJd), The HA Community (https://community.home-assistant.io/t/home-assistant-add-on-postgresql-timescaledb/) or just buy me a coffee:
+
+<a href="https://www.buymeacoffee.com/expaso" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+Thank you all!
+
+
 # 3.0.2
 
 ## 🚀 Features
