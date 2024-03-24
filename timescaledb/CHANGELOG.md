@@ -1,8 +1,8 @@
-# 4.0.0
+# 4.0.1
 
 Finally its here! What you all have been waiting for: The TimescaleDB Toolkit Release! 🥳
 
-⚠️ This release is packed with new stuff and improvements, but also some caveats! Please read these release notes carefully before installing!
+⚠️ This release is packed with new stuff and improvements, but also some caveats! Please read these release notes carefully before installing! ⚠️
 
 It has been a long time coming, but I am finally able to release the TimescaleDB Toolkit for all supported architectures. This release includes the latest version of TimescaleDB, PostgreSQL and Postgis.
 
@@ -24,8 +24,8 @@ It has been a long time coming, but I am finally able to release the TimescaleDB
 As you are already accustomed to, this release will auto-upgrade your current PostgreSQL 15 installation to PostgreSQL 16.2. This is a major upgrade and you should be aware of the following:
 
 - **PostgreSQL 16.2** is a major version upgrade. This means that you will not be able to downgrade to PostgreSQL 15 without a backup.
-
-- From Timescale 2.7 onwards, TimescaleDb has a new form of continuous aggregates. If you have continuous aggregates in your database, you should read the following documentation: https://docs.timescale.com/use-timescale/latest/continuous-aggregates/migrate/
+- **TimescaleDb Extras** Please reinstall TimescaleDb-extras after the upgrade, should you have it installed: https://github.com/timescale/timescaledb-extras 
+- **TimescaleDb** From Timescale 2.7 onwards, TimescaleDb has a new form of continuous aggregates. If you have continuous aggregates in your database, you should read the following documentation: https://docs.timescale.com/use-timescale/latest/continuous-aggregates/migrate/
 
 ### TLDR;
 
