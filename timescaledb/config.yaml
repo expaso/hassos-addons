@@ -10,7 +10,6 @@ arch:
   - amd64
   - armv7
   - i386
-#codenotary: hans@expaso.nl
 startup: system
 boot: auto
 init: false
