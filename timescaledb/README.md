@@ -227,7 +227,7 @@ https://www.postgresql.org/docs/devel/auth-pg-hba-conf.html
 
 Well.. Dive in!
 
-You can read additional documentation on how you van work with your data and Grafana here:
+You can read additional documentation on how you can work with your data and Grafana here:
 
 https://github.com/Expaso/hassos-addons/issues/1
 
