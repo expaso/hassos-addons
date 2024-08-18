@@ -54,7 +54,7 @@ I even had to rewrite all buildscripts to precompile a lot of stuff upfront, oth
 But I am happy it finally worked out. I hope you all enjoy this release as much as I did making it (most of the time ;)
 Thank you for all your support and your patience. I hope you all have a great time with this release!
 
-I would love to hear your feedback, so please let me know what you think on Github (https://github.com/Expaso/hassos-addon-timescaledb), Discord (https://discord.gg/ceAynsJd), The HA Community (https://community.home-assistant.io/t/home-assistant-add-on-postgresql-timescaledb/) or just buy me a coffee:
+I would love to hear your feedback, so please let me know what you think on Github (https://github.com/expaso/hassos-addon-timescaledb), Discord (https://discord.gg/ceAynsJd), The HA Community (https://community.home-assistant.io/t/home-assistant-add-on-postgresql-timescaledb/) or just buy me a coffee:
 
 <a href="https://www.buymeacoffee.com/expaso" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
@@ -139,7 +139,7 @@ Please read the link below carefully to thoroughly understand the new breaking c
 
 (see: https://docs.timescale.com/timescaledb/latest/overview/release-notes/changes-in-timescaledb-2/)
 
-May you find any issues during install and/or upgrade, please open an issue on Github: https://github.com/Expaso/hassos-addon-timescaledb/issues
+May you find any issues during install and/or upgrade, please open an issue on Github: https://github.com/expaso/hassos-addon-timescaledb/issues
 
 Thanks for all your support!
 

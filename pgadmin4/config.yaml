@@ -3,7 +3,7 @@ version: 3.0.1
 stage: stable
 slug: pgadmin4
 description: A PostgreSQL Management and Query tool
-url: https://github.com/Expaso/hassos-addon-pgadmin4
+url: https://github.com/expaso/hassos-addon-pgadmin4
 codenotary: hans@expaso.nl
 arch:
 - aarch64

@@ -11,7 +11,7 @@ This Add-on can be used to control any postgreSQL databases on your network, inc
 To install this Hass.io add-on you need to add the Expaso add-on repository
 first:
 
-You can do this by navigating to the "Add-on Store" tab in the Supervisor panel and then entering https://github.com/Expaso/hassos-addons in the "Add new repository by URL" field.
+You can do this by navigating to the "Add-on Store" tab in the Supervisor panel and then entering https://github.com/expaso/hassos-addons in the "Add new repository by URL" field.
 
 Now scroll down and select the "pgAdmin4" add-on.
 Press install to download the add-on and unpack it on your machine. This can take some time.
@@ -24,7 +24,7 @@ Please be patient.
 ## TimescaleDb
 
 This addon is a standalone implementation of the Postgresql pgAdmin application, and can be used as such.
-When this add-on is used together with my ![TimescaleDb] add-on (https://github.com/Expaso/hassos-addon-timescaledb), you can connect to the Timescale instance using this hostname: `77b2833f-timescaledb` 
+When this add-on is used together with my ![TimescaleDb] add-on (https://github.com/expaso/hassos-addon-timescaledb), you can connect to the Timescale instance using this hostname: `77b2833f-timescaledb` 
 
 ## Configuation
 
