@@ -70,4 +70,3 @@ __CAUTION!!__
 
 Setting this option is a potential security risk and should be avoided whenever possible.
 If you don't know what you are doing, just leave it off.
-

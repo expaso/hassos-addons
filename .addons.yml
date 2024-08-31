@@ -1,0 +1,11 @@
+---
+channel: stable
+addons:
+  timescaledb:
+    repository: expaso/hassos-addon-timescaledb
+    target: timescaledb
+    image: ghcr.io/expaso/timescaledb/{arch}
+  pgadmin4:
+    repository: expaso/hassos-addon-pgadmin4
+    target: pgadmin4
+    image: ghcr.io/expaso/pgadmin4/{arch}
