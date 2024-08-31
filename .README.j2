@@ -1,0 +1,79 @@
+# Expaso Home Assistant Add-ons
+
+![Project Stage][project-stage-shield]
+![Maintenance][maintenance-shield]
+[![License][license-shield]](LICENSE)
+
+<a href="https://www.buymeacoffee.com/expaso" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+## About
+
+Welcome to my repository of Home-Assistant Addons!
+
+## Installation
+
+In the Home-Assistant add-on store, a possibility to add a repository is provided.
+Use the following URL to add this repository:
+
+```txt
+{{ repo }}
+```
+
+## Add-ons provided by this repository
+
+{% for addon in addons %}
+### &#10003; [{{ addon.name }}][addon-{{ addon.target }}]
+
+![Latest Version][{{ addon.target }}-version-shield]
+![Supports armhf Architecture][{{ addon.target }}-armhf-shield]
+![Supports armv7 Architecture][{{ addon.target }}-armv7-shield]
+![Supports aarch64 Architecture][{{ addon.target }}-aarch64-shield]
+![Supports amd64 Architecture][{{ addon.target }}-amd64-shield]
+![Supports i386 Architecture][{{ addon.target }}-i386-shield]
+
+{{ addon.description }}
+
+[:books: {{ addon.name }} add-on documentation][addon-doc-{{ addon.target }}]
+
+{% endfor %}
+## Releases
+
+Releases are based on [Semantic Versioning][semver], and use the format
+of ``MAJOR.MINOR.PATCH``. In a nutshell, the version will be incremented
+based on the following:
+
+- ``MAJOR``: Incompatible or major changes.
+- ``MINOR``: Backwards-compatible new features and enhancements.
+- ``PATCH``: Backwards-compatible bugfixes and package updates.
+
+## Support
+
+Got questions?
+
+Open an issue here on GitHub. Note, we use a separate
+GitHub repository for each add-on. Please ensure you are creating the issue
+on the correct GitHub repository matching the add-on.
+
+{% for addon in addons %}
+- [Open an issue for the add-on: {{ addon.name }}][{{ addon.target }}-issue]
+{% endfor %}
+
+For a general repository issue or add-on ideas [open an issue here][issue]
+
+{% for addon in addons %}
+[addon-{{ addon.target }}]: {{ addon.repo }}/tree/{{ addon.version }}
+[addon-doc-{{ addon.target}}]: {{ addon.repo }}/blob/{{ addon.version }}/README.md
+[{{ addon.target }}-issue]: {{ addon.repo }}/issues
+[{{ addon.target }}-version-shield]: https://img.shields.io/badge/version-{{ addon.version }}-blue.svg
+{% for arch in ['aarch64', 'amd64', 'armhf', 'armv7', 'i386'] %}
+{% if arch in addon.archs %}
+[{{ addon.target }}-{{ arch }}-shield]: https://img.shields.io/badge/{{ arch }}-yes-green.svg
+{% else %}
+[{{ addon.target }}-{{ arch }}-shield]: https://img.shields.io/badge/{{ arch }}-no-red.svg
+{% endif %}
+{% endfor %}
+{% endfor %}
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-production-green.svg
+[gitlabci-shield]: https://gitlab.com/{{ name }}/badges/master/pipeline.svg
+[license-shield]: https://img.shields.io/github/license/{{ name }}.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2024.svg
