@@ -1,5 +1,5 @@
 name: TimescaleDB
-version: 4.0.1
+version: 4.1.0
 slug: timescaledb
 description: An open-source database built on PostgreSQL for analyzing time-series
   data with the power and convenience of SQL
@@ -52,4 +52,4 @@ schema:
   init_commands:
   - str
   retry_upgrade: bool?
-image: husselhans/hassos-addon-timescaledb-{arch}
+image: ghcr.io/expaso/timescaledb/{arch}

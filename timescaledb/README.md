@@ -1,71 +1,12 @@
-# Home Assistant Add-on: [PostgreSQL](https://www.postgresql.org/) [TimescaleDB](https://www.timescale.com/)
-## [PostgreSql 16.2](https://www.postgresql.org/) & [Postgis 3.4.2](https://postgis.net/) & [TimescaleDB 2.14.2](https://www.timescale.com/) & [TimescaleDB Toolkit 1.18.0](https://github.com/timescale/timescaledb-toolkit) & [pgAgent 4.2.2](https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html)
+![Project Stage][project-stage-shield]
+![Maintenance][maintenance-shield]
+[![License][license-shield]](https://github.com/expaso/hassos-addon-timescaledb/blob/main/LICENSE)
 
 <a href="https://www.buymeacoffee.com/expaso" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
-## PostgreSQL Overview
+# Home Assistant Add-on: [PostgreSQL](https://www.postgresql.org/) [TimescaleDB](https://www.timescale.com/)
 
-From: https://www.postgresql.org/about/
-
-PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. The origins of PostgreSQL date back to 1986 as part of the POSTGRES project at the University of California at Berkeley and has more than 30 years of active development on the core platform.
-
-PostgreSQL has earned a strong reputation for its proven architecture, reliability, data integrity, robust feature set, extensibility, and the dedication of the open source community behind the software to consistently deliver performant and innovative solutions.
-
-## TimescaleDB Overview
-
-From: https://docs.timescale.com/latest/introduction
-
-TimescaleDB is an open-source time-series database optimized for fast ingest and complex queries. It speaks "full SQL" and is correspondingly easy to use like a traditional relational database, yet scales in ways previously reserved for NoSQL databases.
-
-Compared to the trade-offs demanded by these two alternatives (relational vs. NoSQL), TimescaleDB offers the best of both worlds for time-series data:
-
-### Easy to Use
-Full SQL interface for all SQL natively supported by PostgreSQL (including secondary indexes, non-time based aggregates, sub-queries, JOINs, window functions).
-
-- Connects to any client or tool that speaks PostgreSQL, no changes needed.
-- Time-oriented features, API functions, and optimizations.
-- Robust support for Data retention policies.
-
-## Introduction
-
-Say, you want put all those nice Home Assistant measurements from your smarthome to good use, and for example, use something like [Grafana](https://grafana.com) for your dashboards, and maybe [Prometheus](https://prometheus.io/) for monitoring..
-
-__That means you need a decent time-series database.__
-
-You could use [InfluxDB](www.influxdata.com) for this.
-This works pretty good.. but.. being a NoSQL database, this means you have to learn Flux (it's query language). Once you get there, you will quickly discover that updating existing data in Influx is near impossible (without overwriting it). That's a bummer, since my data needed some 'tweaking'.
-
-For the Home Assistant recorder, you probaly need some SQL storage too. That means you also need to 
-bring stuff like MariaDb or Postgres to the table (unless you keep using the SqlLite database). 
-
-So.. why not combine these?
-Seriously?! You ask...
-
-Yeah! Pleae read this blogpost to get a sense of why:
-
-https://blog.timescale.com/blog/why-sql-beating-nosql-what-this-means-for-future-of-data-time-series-database-348b777b847a/
-
-And so.. Use the power of your already existing SQL skills for PostgreSQL, combined with powerfull time-series functionality of TimeScaleDb and be done with it!
-
-As a bonus, I also added a Geospatial extention: [Postgis](https://postgis.net/).
-You can now happily query around your data like a PRO 😎.
-
-## Installation
-
-There are two ways to install this add-on: via the Home Assistant add-on store or, by running the container manually on a separate (more powerfull?) machine.
-This could come in handy if you want to use a more powerfull machine for your database, or if you want to use a different OS than Home Assistant OS.
-
-### Home Assistant add-on store
-
-To install this Hass.io add-on you need to add the Expase add-on repository
-first:
-
-You can do this by navigating to the "Add-on Store" tab in the Supervisor panel and then entering https://github.com/expaso/hassos-addons in the "Add new repository by URL" field.
-
-Now scroll down and select the "TimeScaleDb" add-on.
-Press install to download the add-on and unpack it on your machine. This can take some time.
-
-Start the add-on, check the logs of the add-on to see if everything went well.
+## [PostgreSql 16.3](https://www.postgresql.org/) & [Postgis 3.4.2](https://postgis.net/) & [TimescaleDB 2.16.1](https://www.timescale.com/) & [TimescaleDB Toolkit 1.18.0](https://github.com/timescale/timescaledb-toolkit) & [pgAgent 4.2.2](https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html)
 
 #### Configuation
 
@@ -75,7 +16,7 @@ Example add-on configuration:
  {
     "databases": ["homeassistant"],
     "timescale_enabled": ["homeassistant"],
-    "timescaledb": { 
+    "timescaledb": {
       "telemetry": "basic",
       "maxmemory": "512MB",
       "maxcpus": "4"
@@ -129,7 +70,6 @@ Setting this higher could lead to more memory usage.
 
 Example: `max_connections=30`
 
-
 #### Option: `system_packages`
 
 Advanced users only!
@@ -137,11 +77,10 @@ A list of extra alpine packages to iunstall during addon-startup.
 
 Example: ['nano']
 
-
 #### Option: `init_commands`
 
 Advanced users only!
-A list of extra commands to run during startup. 
+A list of extra commands to run during startup.
 
 To alter something in the postgresql.conf file for example:
 
@@ -150,7 +89,7 @@ Example: ['sed -i -e "/max_connections =/ s/= .*/= 50/" /data/postgres/postgresq
 #### Option: `retry_upgrade`
 
 Advanced users only!
-When set, the upgrade from Postgres 14 to 15 could be retryed if it failed mid-flight. 
+When set, the upgrade from Postgres 14 to 15 could be retryed if it failed mid-flight.
 Basically this will try to find the old database-files from Postgres 12, and restore them before trying to upgrade to Postgres 14 again.
 
 !! Please don't set this if you don't know what you are doing or before taking a backup. !!
@@ -167,6 +106,7 @@ docker pull husselhans/hassos-addon-timescaledb-armv7:latest
 docker pull husselhans/hassos-addon-timescaledb-armhf:latest
 docker pull husselhans/hassos-addon-timescaledb-i386:latest
 ```
+
 You can replace latest with the version number you want to use.
 
 Simply start it like this:
@@ -175,7 +115,7 @@ Simply start it like this:
 docker run \
   --rm \
   --name timescaledb \
-  --v ${PWD}/timescaledb_addon_data:/data \ 
+  --v ${PWD}/timescaledb_addon_data:/data \
   -p 5432:5432 \
   husselhans/hassos-addon-timescaledb-amd64:dev
 ```
@@ -188,7 +128,7 @@ If you want to start the container as a daemon, simply remove the `--rm` option 
 docker run \
   -d \
   --name timescaledb \
-  --v ${PWD}/timescaledb_addon_data:/data \ 
+  --v ${PWD}/timescaledb_addon_data:/data \
   -p 5432:5432 \
   husselhans/hassos-addon-timescaledb-amd64:dev
 ```
@@ -202,7 +142,7 @@ Seeking a nice web-based client? **Try the pgAdmin4 addon.**
 Please do not forget to also map the TCP/IP port in the network-section of the addon to the desired port number.
 The default is port `5432`
 
-__Securiy Notice!__
+**Securiy Notice!**
 
 The default username is `postgres` with password `homeassistant`.
 Make sure you change this immediately after activating the add-on:
@@ -227,9 +167,24 @@ https://www.postgresql.org/docs/devel/auth-pg-hba-conf.html
 
 Well.. Dive in!
 
-You can read additional documentation on how you can work with your data and Grafana here:
+You can read additional documentation on how you van work with your data and Grafana here:
 
 https://github.com/expaso/hassos-addons/issues/1
 
+## Support
+
+- Got questions?
+  [Open an issue here][issues]
+
+- For a general repository issue or add-on ideas? [Open an issue here][repo-issues]
+
+[issues]: https://github.com/expaso/hassos-addon-timescaledb/issues
+[repo-issues]: https://github.com/expaso/hassos-addons/issues
 
 
+
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
+[release-shield]: https://img.shields.io/badge/version-v4.1.0-blue.svg
+[release]: https://github.com/expaso/hassos-addon-timescaledb/tree/v4.1.0
+[license-shield]: https://img.shields.io/github/license/expaso/hassos-addon-TimescaleDB.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2024.svg
