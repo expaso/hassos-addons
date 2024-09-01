@@ -56,7 +56,7 @@ Thank you for all your support and your patience. I hope you all have a great ti
 
 I would love to hear your feedback, so please let me know what you think on Github (https://github.com/expaso/hassos-addon-timescaledb), Discord (https://discord.gg/ceAynsJd), The HA Community (https://community.home-assistant.io/t/home-assistant-add-on-postgresql-timescaledb/) or just buy me a coffee:
 
-<a href="https://www.buymeacoffee.com/expaso" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+<a href="https://www.buymeacoffee.com/expaso" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 Thank you all!
 

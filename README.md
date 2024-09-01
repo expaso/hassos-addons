@@ -4,6 +4,8 @@
 ![Maintenance][maintenance-shield]
 [![License][license-shield]](LICENSE)
 
+<a href="https://www.buymeacoffee.com/expaso" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 ## About
 
 Welcome to my repository of Home-Assistant Addons!
