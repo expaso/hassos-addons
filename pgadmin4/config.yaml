@@ -1,5 +1,6 @@
 name: pgAdmin4
-version: 3.1.0
+version: 3.0.1
+stage: stable
 slug: pgadmin4
 description: A PostgreSQL Management and Query tool
 url: https://github.com/Expaso/hassos-addon-pgadmin4
@@ -10,10 +11,14 @@ arch:
 - armhf
 - i386
 - armv7
+startup: application
 ingress: true
+ingress_port: 0
 panel_icon: mdi:database
 panel_title: pgAdmin 4
 hassio_api: true
+hassio_role: default
+boot: auto
 init: false
 homeassistant: 0.92.0b2
 timeout: 20
@@ -43,4 +48,4 @@ schema:
   init_commands:
   - str
   leave_front_door_open: bool?
-image: ghcr.io/expaso/pgadmin4/{arch}
+image: husselhans/hassos-addon-pgadmin4-{arch}
