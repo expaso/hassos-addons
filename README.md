@@ -5,7 +5,6 @@
 [![License][license-shield]](LICENSE)
 
 <a href="https://www.buymeacoffee.com/expaso" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
 ## About
 
 Welcome to my repository of Home-Assistant Addons!
@@ -70,25 +69,25 @@ on the correct GitHub repository matching the add-on.
 
 For a general repository issue or add-on ideas [open an issue here][issue]
 
-[addon-timescaledb]: https://github.com/expaso/hassos-addon-timescaledb/tree/v4.0.2
-[addon-doc-timescaledb]: https://github.com/expaso/hassos-addon-timescaledb/blob/v4.0.2/README.md
+[addon-timescaledb]: https://github.com/expaso/hassos-addon-timescaledb/tree/v4.0.1
+[addon-doc-timescaledb]: https://github.com/expaso/hassos-addon-timescaledb/blob/v4.0.1/README.md
 [timescaledb-issue]: https://github.com/expaso/hassos-addon-timescaledb/issues
-[timescaledb-version-shield]: https://img.shields.io/badge/version-v4.0.2-blue.svg
+[timescaledb-version-shield]: https://img.shields.io/badge/version-v4.0.1-blue.svg
 [timescaledb-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [timescaledb-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [timescaledb-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [timescaledb-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [timescaledb-i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[addon-pgadmin4]: https://github.com/expaso/hassos-addon-pgadmin4/tree/3d52abb
-[addon-doc-pgadmin4]: https://github.com/expaso/hassos-addon-pgadmin4/blob/3d52abb/README.md
+[addon-pgadmin4]: https://github.com/expaso/hassos-addon-pgadmin4/tree/v3.0.1
+[addon-doc-pgadmin4]: https://github.com/expaso/hassos-addon-pgadmin4/blob/v3.0.1/README.md
 [pgadmin4-issue]: https://github.com/expaso/hassos-addon-pgadmin4/issues
-[pgadmin4-version-shield]: https://img.shields.io/badge/version-3d52abb-blue.svg
+[pgadmin4-version-shield]: https://img.shields.io/badge/version-v3.0.1-blue.svg
 [pgadmin4-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [pgadmin4-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [pgadmin4-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [pgadmin4-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [pgadmin4-i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[project-stage-shield]: https://img.shields.io/badge/project%20stage-stable-green.svg
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-production-green.svg
 [gitlabci-shield]: https://gitlab.com/expaso/hassos-addons/badges/master/pipeline.svg
 [license-shield]: https://img.shields.io/github/license/expaso/hassos-addons.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2024.svg
