@@ -1,5 +1,5 @@
 name: pgAdmin4
-version: 3.0.1
+version: 3.2.0-RC1
 stage: stable
 slug: pgadmin4
 description: A PostgreSQL Management and Query tool
