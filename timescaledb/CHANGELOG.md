@@ -1,5 +1,6 @@
 ## Changes
 
-* ⬆️ Upgraded PostgreSql to version 16.3
-* ⬆️ Upgraded TimescaleDb to version 2.16.1 - Fixes #46 
-* ⬆️ Upgraded base-images to 16.2.1
+* 🎉 Added `system_stats` extension by default so the pgAdmin dashboard looks more complete. It is not installed by default. You can do that manually as indicated by pgAdmin. Closes [#47](https://github.com/expaso/hassos-addon-timescaledb/issues/47)
+
+[Full change history](https://github.com/expaso/hassos-addon-timescaledb/releases)
+
