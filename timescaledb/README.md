@@ -6,7 +6,7 @@
 
 # Home Assistant Add-on: [PostgreSQL](https://www.postgresql.org/) [TimescaleDB](https://www.timescale.com/)
 
-## [PostgreSql 16.3](https://www.postgresql.org/) & [Postgis 3.4.2](https://postgis.net/) & [TimescaleDB 2.16.1](https://www.timescale.com/) & [TimescaleDB Toolkit 1.18.0](https://github.com/timescale/timescaledb-toolkit) & [pgAgent 4.2.2](https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html)
+## [PostgreSql 17.4](https://www.postgresql.org/) & [Postgis 3.5.1](https://postgis.net/) & [TimescaleDB 2.18.2](https://www.timescale.com/) & [TimescaleDB Toolkit 1.19.0](https://github.com/timescale/timescaledb-toolkit) & [pgAgent 4.2.2](https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html)
 
 #### Configuation
 
@@ -107,7 +107,7 @@ docker pull ghcr.io/expaso/timescaledb/armhf:stable
 docker pull ghcr.io/expaso/timescaledb/i386:stable
 ```
 
-You can replace latest with the version number you want to use.
+You can replace *stable* with the version number you want to use.
 
 Simply start it like this:
 
@@ -117,7 +117,7 @@ docker run \
   --name timescaledb \
   --v ${PWD}/timescaledb_addon_data:/data \
   -p 5432:5432 \
-  ghcr.io/expaso/timescaledb/amd64:dev
+  ghcr.io/expaso/timescaledb/amd64:stable
 ```
 
 This will use ~/timescaledb_addon_data as the data directory for the container, and map the port 5432 to the host.
@@ -130,7 +130,7 @@ docker run \
   --name timescaledb \
   --v ${PWD}/timescaledb_addon_data:/data \
   -p 5432:5432 \
-  ghcr.io/expaso/timescaledb/amd64:dev
+  ghcr.io/expaso/timescaledb/amd64:stable
 ```
 
 ## Usage
@@ -148,8 +148,19 @@ The default username is `postgres` with password `homeassistant`.
 Make sure you change this immediately after activating the add-on:
 
 ```
-ALTER USER user_name WITH PASSWORD 'strongpassword';
+ALTER USER postgres WITH PASSWORD 'strongpassword';
 ```
+
+⚠️ It's considered best practice to create a separate user for each database you create, and transfer ownership of the database to that user.
+In this configuration, The `postgres` user should only be used for administrative tasks.
+
+Use the following commands to create a user `homeassistant` with password `mypassword` and transfer ownership of the database `mydatabase` to that user, or use _pgAdmin_ for this task if you prefer a GUI.
+
+```
+CREATE USER homeassistant WITH PASSWORD 'mypassword';
+ALTER DATABASE mydatabase OWNER TO homeassistant;
+```
+
 
 A default `pg_hba.conf` is created in the data directory with the following content, which allows local peer users and network users with passwords.:
 
@@ -184,7 +195,7 @@ https://github.com/expaso/hassos-addons/issues/1
 
 
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
-[release-shield]: https://img.shields.io/badge/version-v4.2.0-blue.svg
-[release]: https://github.com/expaso/hassos-addon-timescaledb/tree/v4.2.0
+[release-shield]: https://img.shields.io/badge/version-v5.1.0-blue.svg
+[release]: https://github.com/expaso/hassos-addon-timescaledb/tree/v5.1.0
 [license-shield]: https://img.shields.io/github/license/expaso/hassos-addon-TimescaleDB.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2024.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg

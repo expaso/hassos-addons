@@ -1,6 +1,12 @@
-## Changes
+## 🚀 Features
 
-* 🎉 Added `system_stats` extension by default so the pgAdmin dashboard looks more complete. It is not installed by default. You can do that manually as indicated by pgAdmin. Closes [#47](https://github.com/expaso/hassos-addon-timescaledb/issues/47)
+* 🎉 PostgreSql 17
 
-[Full change history](https://github.com/expaso/hassos-addon-timescaledb/releases)
+## Maintenance
+
+* ⬆️ Upgraded PostgreSql to version 17..4 @SIMULATAN (#50)
+* ⬆️ Upgraded TimescaleDb to version 2.18.2
+* ⬆️ Upgraded TimescaleDb Toolkit to version 1.19.0
+* ⬆️ Upgraded PostGIS to 3.5.1
+* ⬆️ Upgraded base-images to 17.2.1
 
