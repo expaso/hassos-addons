@@ -1,5 +1,5 @@
 name: pgAdmin4
-version: 3.2.0
+version: 4.0.0
 slug: pgadmin4
 description: A PostgreSQL Management and Query tool
 url: https://github.com/Expaso/hassos-addon-pgadmin4
@@ -7,7 +7,6 @@ codenotary: hans@expaso.nl
 arch:
 - aarch64
 - amd64
-- armhf
 - i386
 - armv7
 ingress: true
