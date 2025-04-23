@@ -1,12 +1,4 @@
 ## 🚀 Features
 
-* 🎉 PostgreSql 17
-
-## Maintenance
-
-* ⬆️ Upgraded PostgreSql to version 17..4 @SIMULATAN (#50)
-* ⬆️ Upgraded TimescaleDb to version 2.18.2
-* ⬆️ Upgraded TimescaleDb Toolkit to version 1.19.0
-* ⬆️ Upgraded PostGIS to 3.5.1
-* ⬆️ Upgraded base-images to 17.2.1
+* 🎉 Added pgVector (Vector) extension (https://github.com/pgvector/pgvector) so you can use this addon as a Vector database for RAG operations. Thanks  @ffMathy 😃! Closes #54 
 
