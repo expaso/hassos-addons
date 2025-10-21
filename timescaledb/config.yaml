@@ -1,5 +1,5 @@
 name: TimescaleDB
-version: 5.2.0
+version: 5.4.1
 slug: timescaledb
 description: An open-source database built on PostgreSQL for analyzing time-series
   data with the power and convenience of SQL
@@ -19,6 +19,10 @@ map:
 - backup:rw
 - media:rw
 timeout: 60
+backup_pre: /usr/share/timescaledb/backup_pre.sh
+backup_post: /usr/share/timescaledb/backup_post.sh
+backup_exclude:
+- /data/postgres/*
 ports:
   5432/tcp: null
 ports_description:
@@ -37,6 +41,8 @@ options:
   system_packages: []
   init_commands: []
   retry_upgrade: false
+  postgresql_config: {}
+  pg_hba_config: []
 schema:
   databases:
   - str
@@ -52,4 +58,13 @@ schema:
   init_commands:
   - str
   retry_upgrade: bool?
+  postgresql_config:
+    match(^[a-z_]+$)?: str?
+  pg_hba_config:
+  - type: list(local|host|hostssl|hostnossl)?
+    database: str?
+    user: str?
+    address: str?
+    method: list(trust|reject|md5|password|scram-sha-256|gss|sspi|ident|peer|pam|ldap|radius|cert)?
+    options: str?
 image: ghcr.io/expaso/timescaledb/{arch}
