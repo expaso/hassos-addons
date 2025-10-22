@@ -1,5 +1,5 @@
 name: TimescaleDB
-version: 5.4.1
+version: 5.4.2
 slug: timescaledb
 description: An open-source database built on PostgreSQL for analyzing time-series
   data with the power and convenience of SQL
@@ -22,7 +22,8 @@ timeout: 60
 backup_pre: /usr/share/timescaledb/backup_pre.sh
 backup_post: /usr/share/timescaledb/backup_post.sh
 backup_exclude:
-- /data/postgres/*
+- data/postgres/**
+- postgres/**
 ports:
   5432/tcp: null
 ports_description:
