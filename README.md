@@ -73,15 +73,15 @@ on the correct GitHub repository matching the add-on.
 
 For a general repository issue or add-on ideas [open an issue here][issue]
 
-[addon-timescaledb]: https://github.com/expaso/hassos-addon-timescaledb/tree/v5.4.2
-[addon-doc-timescaledb]: https://github.com/expaso/hassos-addon-timescaledb/blob/v5.4.2/README.md
+[addon-timescaledb]: https://github.com/expaso/hassos-addon-timescaledb/tree/v6.1.0
+[addon-doc-timescaledb]: https://github.com/expaso/hassos-addon-timescaledb/blob/v6.1.0/README.md
 [timescaledb-issue]: https://github.com/expaso/hassos-addon-timescaledb/issues
-[timescaledb-version-shield]: https://img.shields.io/badge/version-v5.4.2-blue.svg
+[timescaledb-version-shield]: https://img.shields.io/badge/version-v6.1.0-blue.svg
 [timescaledb-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [timescaledb-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[timescaledb-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
-[timescaledb-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[timescaledb-i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+[timescaledb-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[timescaledb-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
+[timescaledb-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [addon-pgadmin4]: https://github.com/expaso/hassos-addon-pgadmin4/tree/v4.0.0
 [addon-doc-pgadmin4]: https://github.com/expaso/hassos-addon-pgadmin4/blob/v4.0.0/README.md
 [pgadmin4-issue]: https://github.com/expaso/hassos-addon-pgadmin4/issues

@@ -1,16 +1,12 @@
 name: TimescaleDB
-version: 5.4.2
+version: 6.1.0
 slug: timescaledb
 description: An open-source database built on PostgreSQL for analyzing time-series
   data with the power and convenience of SQL
 url: https://github.com/expaso/hassos-addon-timescaledb
-codenotary: hans@expaso.nl
 arch:
-- armhf
 - aarch64
 - amd64
-- armv7
-- i386
 startup: system
 init: false
 tmpfs: true
@@ -27,8 +23,8 @@ backup_exclude:
 ports:
   5432/tcp: null
 ports_description:
-  5432/tcp: PostgreSQL Port. Beware! This port may already be in use. Choose another
-    port-number if the add-on won't start.
+  5432/tcp: PostgreSQL Port. Enter only the port number, e.g. 5432. Beware! This port
+    may already be in use. Choose another port-number if the add-on won't start.
 options:
   databases:
   - homeassistant
@@ -39,12 +35,14 @@ options:
     maxmemory: 512MB
     maxcpus: 4
   max_connections: 50
+  vectorchord: false
   system_packages: []
   init_commands: []
   retry_upgrade: false
-  postgresql_config: {}
+  postgresql_settings: []
   pg_hba_config: []
 schema:
+  postgres_password: password?
   databases:
   - str
   timescale_enabled:
@@ -54,13 +52,14 @@ schema:
     maxmemory: str?
     maxcpus: int(1,)?
   max_connections: int(20,)
+  vectorchord: bool
   system_packages:
   - str
   init_commands:
   - str
   retry_upgrade: bool?
-  postgresql_config:
-    match(^[a-z_]+$)?: str?
+  postgresql_settings:
+  - match(^[A-Za-z][A-Za-z0-9_.]*\s*=.+$)
   pg_hba_config:
   - type: list(local|host|hostssl|hostnossl)?
     database: str?
