@@ -11,6 +11,6 @@ permissions:
 
 jobs:
   workflows:
-    uses: hassio-addons/workflows/.github/workflows/repository-updater.yaml@adec4b96071354cc44924a6ef9975ff60cf9ddd9 # v5.0.0
+    uses: hassio-addons/workflows/.github/workflows/repository-updater.yaml@adec4b96071354cc44924a6ef9975ff60cf9ddd9  # v5.0.0
     secrets:
       UPDATER_TOKEN: ${{ secrets.UPDATER_TOKEN }}
