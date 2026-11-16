@@ -12,6 +12,12 @@ pgAdmin is the most popular and feature rich Open Source administration and deve
 
 This Add-on can be used to control any postgreSQL databases on your network, incuding those served the TimescaleDB add-on, which can also install from the same addon-repository.
 
+The add-on supports amd64 and aarch64. The current base image no longer supports
+the previously supported 32-bit armv7 and i386 architectures.
+
+PostgreSQL client tools for versions 12 through 18 are included. pgAdmin 9.19
+supports PostgreSQL servers 14 through 18.
+
 ## Configuation
 
 Example add-on configuration:
@@ -70,7 +76,7 @@ If you don't know what you are doing, just leave it off.
 
 
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
-[release-shield]: https://img.shields.io/badge/version-v4.0.0-blue.svg
-[release]: https://github.com/expaso/hassos-addon-pgadmin4/tree/v4.0.0
+[release-shield]: https://img.shields.io/badge/version-v5.0.0-blue.svg
+[release]: https://github.com/expaso/hassos-addon-pgadmin4/tree/v5.0.0
 [license-shield]: https://img.shields.io/github/license/expaso/hassos-addon-pgAdmin4.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2024.svg

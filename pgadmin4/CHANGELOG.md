@@ -1,10 +1,11 @@
-## Breaking changes
+## Breaking change
 
-⚠️ Dropped support for ARMHF platforms (like the first Raspberry PI) due to the fact that it's increasingly harder to build for that platform. Should this be a blocking issue for you: let me know and motivate why you need this, and I will see if I can assist.
+32-bit architectures (armv7 and i386) are no longer supported. This release requires aarch64 or amd64.
 
 ## Changes
 
-🎉 Added support for Postgresql 17!
-🎉Upgraded pgAdmin to 9.1 See release notes: https://www.pgadmin.org/docs/pgadmin4/development/release_notes_9_1.html
-🚛 Add PG 17 binaries. Thanks @hobbe (#13)!
-⬆️ Updated base-image to 17.2.1
+- Upgrade pgAdmin to 9.19 and the Home Assistant base image to 21.0.11.
+- Add PostgreSQL 18 client utilities and retain PostgreSQL 12-17 client utilities.
+- Update the add-on startup and nginx integration for the current Home Assistant base image.
+
+pgAdmin 9.19 supports PostgreSQL server versions 14-18. Back up your pgAdmin configuration before upgrading.
